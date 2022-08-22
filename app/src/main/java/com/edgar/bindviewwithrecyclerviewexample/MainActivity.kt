@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         binding.button.setOnClickListener {
             val newMovie = Movie(binding.editTextMovie.text.toString())
             moviesListAdapter.addMovie(newMovie)
+            binding.editTextMovie.text.clear()
         }
     }
 
