@@ -32,4 +32,5 @@ class MoviesListAdapter(private val context: Context, private var movies: Mutabl
         movies.add(movie)
         notifyItemInserted(movies.size-1)
     }
+
 }
